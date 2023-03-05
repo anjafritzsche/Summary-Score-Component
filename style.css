@@ -1,8 +1,3 @@
-/* * {
-  border: 1px solid grey;
-  box-sizing: border-box;
-} */
-
 body {
   min-height: 100vh;
   margin: 0 auto;
@@ -22,8 +17,8 @@ main {
 
 .containerbody {
   border: 1px solid grey;
-  width: 45%;
-  height: 50%;
+  width: 40%;
+  height: 45%;
   align-self: center;
   display: flex;
   justify-content: center;
@@ -70,13 +65,10 @@ main {
 }
 
 .scorebox {
-  /* border: 1px solid grey; */
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 40%;
-
-  /* margin-top: -50px; */
+  height: 50%;
 
 }
 
@@ -151,7 +143,7 @@ main {
   align-items: center;
   padding: 5%;
   font-size: 1.2rem;
-  margin: 0;
+  margin: 2%;
 }
 
 .reaction,
@@ -160,6 +152,14 @@ main {
 .visual {
   display: flex;
   align-self: center;
+}
+
+.summarybox {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 svg {
@@ -184,9 +184,6 @@ svg {
   margin: 0;
 }
 
-.summary {
-  margin-bottom: 10%;
-}
 
 .reactionbox {
   background: hsla(0, 100%, 67%, 0.1);
@@ -227,7 +224,7 @@ svg {
 button {
   background-color: hsl(224, 30%, 27%);
   border-style: none;
-  padding: 0.8rem;
+  padding: 1rem;
   border-radius: 30px;
   color: hsl(221, 100%, 96%);
   font-size: 1.2rem;
