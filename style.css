@@ -23,7 +23,7 @@ main {
 
 .containerbody {
   width: 70%;
-  height: 60%;
+  height: 70%;
   align-self: center;
   display: flex;
   justify-content: center;
@@ -32,8 +32,8 @@ main {
 
 .cardcontainer {
   background-color: white;
-  width: 46%;
-  height: 55%;
+  width: 60%;
+  height: 60%;
   display: flex;
   align-self: center;
   box-shadow: 1px 5px 50px hsla(241, 81%, 54%, 0.2);
