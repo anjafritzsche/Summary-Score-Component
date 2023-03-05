@@ -1,0 +1,377 @@
+/* * {
+  border: 1px solid grey;
+  box-sizing: border-box;
+} */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+
+}
+
+/*   -------      Card Alignment    -------   */
+
+.containerbody {
+  width: 70%;
+  height: 70%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.cardcontainer {
+  background-color: white;
+  width: 46%;
+  height: 55%;
+  display: flex;
+  align-self: center;
+  box-shadow: 1px 5px 50px hsla(241, 81%, 54%, 0.2);
+  border-radius: 30px;
+  flex-wrap: wrap;
+}
+
+.alignbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+/*       --------   card one    -------      */
+.cardone {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 30px;
+  display: flex;
+  text-align: center;
+  width: 50%;
+
+}
+
+.scorebox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 30px 0 0;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 0;
+}
+
+.result>h1 {
+  font-size: 1.5rem;
+  color: hsl(241, 100%, 89%);
+  margin: 0;
+}
+
+.score {
+  font-size: 70px;
+  font-weight: 800;
+  color: hsl(221, 100%, 96%);
+}
+
+.totalscore {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(241, 100%, 89%);
+}
+
+.scoretext {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.great {
+  color: hsl(221, 100%, 96%);
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.message {
+  color: hsl(241, 100%, 89%);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+/*       --------   card two   -------      */
+.cardtwo {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+
+}
+
+.reactionbox,
+.memorybox,
+.verbalbox,
+.visualbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 12px;
+  font-size: 18px;
+}
+
+.reaction,
+.memory,
+.verbal,
+.visual {
+  display: flex;
+  align-self: center;
+}
+
+svg {
+  padding-right: 5px;
+  margin: 0;
+  align-self: center;
+}
+
+.numbers {
+  color: hsl(224, 30%, 27%);
+  font-weight: 700;
+}
+
+.total {
+  color: hsla(224, 30%, 27%, 0.5);
+  font-weight: 700;
+  padding-left: 5px;
+}
+
+.summary>h2 {
+  font-size: 1.5rem;
+  color: hsl(224, 30%, 27%);
+  margin: 0;
+}
+
+.reactionbox {
+  background: hsla(0, 100%, 67%, 0.1);
+  border-radius: 8px;
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.memorybox {
+  background: hsla(39, 100%, 56%, 0.1);
+  border-radius: 8px;
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbalbox {
+  background: hsla(166, 100%, 37%, 0.1);
+  border-radius: 8px;
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.visualbox {
+  background: hsla(234, 85%, 45%, 0.1);
+  border-radius: 8px;
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-style: none;
+  padding: 15px;
+  border-radius: 30px;
+  color: hsl(221, 100%, 96%);
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+/*       --------    footer    -------      */
+footer {
+  position: fixed;
+  bottom: 2%;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+}
+
+footer>.attribution {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.attribution>.credit {
+  margin: 2px 0;
+  color: hsl(220, 15%, 55%);
+  font-size: 12px;
+  align-self: center;
+}
+
+.attribution>.credit>a {
+  color: hsl(218, 44%, 22%);
+  text-decoration: none;
+}
+
+/*  Media Query Tablet */
+@media screen and (max-width: 1024px) {
+
+  .containerbody,
+  .cardcontainer {
+    width: 85%;
+    height: 65%;
+  }
+}
+
+/*  Media Query ---- Mobile 500px */
+@media screen and (max-width: 500px) {
+
+  footer {
+    display: none;
+  }
+
+  .containerbody,
+  .cardcontainer {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cardone,
+  .cardtwo {
+    width: 100%;
+  }
+
+  .cardone {
+    height: 45%;
+    border-radius: 0 0 30px 30px;
+  }
+
+  .alignbox {
+    padding-top: 20px;
+  }
+
+  .cardtwo {
+    height: 65%;
+  }
+
+  .cardtwo>.alignbox {
+    height: 75%;
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+
+  .scorebox {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .reactionbox,
+  .memorybox,
+  .verbalbox,
+  .visualbox {
+    padding: 15px;
+  }
+
+  .summary {
+    margin-bottom: 10px;
+  }
+
+  svg {
+    padding-right: 10px;
+  }
+
+  button {
+    background: hsl(224, 30%, 27%);
+  }
+
+  button:hover {
+    background: hsl(224, 30%, 27%);
+  }
+}
+
+/*  Media Query ---- Mobile 375px */
+@media screen and (max-width: 375px) {
+  .result>h1 {
+    font-size: 18px;
+  }
+
+  .totalscore {
+    font-size: 15px;
+  }
+
+  .scorebox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .score {
+    font-size: 45px;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+
+  .great {
+    font-size: 22px;
+  }
+
+  .summary>h2 {
+    font-size: 18px;
+  }
+
+  .message {
+    font-size: 15px;
+  }
+
+  .reactionbox,
+  .memorybox,
+  .verbalbox,
+  .visualbox {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+  }
+
+}
